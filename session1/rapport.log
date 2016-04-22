@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.4.22)  22 APR 2016 11:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.4.22)  22 APR 2016 12:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1320,9 +1320,9 @@ Package pdftex.def Info: back.png used on input line 245.
 ]
 Chapter 6.
 
-Overfull \hbox (24.7649pt too wide) in paragraph at lines 302--303
-[]\T1/lmr/m/n/12 Lorsque vous avez fini la to-tal-ité des exos vous pou-vez ta-
-per : tel-net towel.blinkenlights.nl
+Overfull \hbox (47.61118pt too wide) in paragraph at lines 302--303
+[]\T1/lmr/m/n/12 Lorsque vous avez fini la to-tal-ité des ex-er-ci-ces vous pou
+-vez ta-per : tel-net towel.blinkenlights.nl
  []
 
 
@@ -1356,8 +1356,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
  ) 
 Here is how much of TeX's memory you used:
  15758 strings out of 493054
- 227343 string characters out of 6140586
- 429161 words of memory out of 5000000
+ 227345 string characters out of 6140586
+ 429160 words of memory out of 5000000
  18911 multiletter control sequences out of 15000+600000
  34702 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1369,7 +1369,7 @@ f-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/lm/lmtt8.pfb>
-Output written on rapport.pdf (9 pages, 542818 bytes).
+Output written on rapport.pdf (9 pages, 542934 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams
