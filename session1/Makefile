@@ -6,7 +6,7 @@ DEPS =
 
 # Relative path to the LaTeX koala documentclass setup files
 # You should not need to touch this
-RELPATH = /home/lokoum/Downloads/EpiLayout/session1/class
+RELPATH = ./class
 
 # You should not touch this either
 include $(RELPATH)/Makefile.LaTeX
