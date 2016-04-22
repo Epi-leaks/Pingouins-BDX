@@ -1,0 +1,305 @@
+\documentclass{koala-en}
+\usepackage[english]{babel}
+\usepackage{lastpage}
+\usepackage{pdfpages}
+\renewcommand{\arraystretch}{1.5} %% Aeration des tableaux
+\hyphenpenalty 10000
+\usepackage{fancyhdr}
+\usepackage{fmtcount}
+\pagestyle{fancyplain}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\headrulewidth}{0.8pt}
+\renewcommand{\footrulewidth}{0.8pt}
+\fancyhead[R]{\nouppercase{\leftmark}}
+\lfoot{Session Pingouins - Seance 1}
+\rfoot{\thepage/\pageref{LastPage}}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+\newcommand*{\glossaryname}{Dictionary}
+\usepackage[numberedsection]{glossaries}
+\newcommand{\dictentry}[2]{%
+  \newglossaryentry{#1}{name=#1,description={#2}}%
+  \glslink{#1}{#1*}%
+}
+\makeglossaries
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title{Séssion Pingouins}
+\subtitle{Séance 1}
+
+\maketitle
+
+\summary{test}
+{
+    Bienvenue dans cette première séance. \newline
+    Nous tenterons d'eclaircir ensemble certaines notions qui sont encore sombres pour vous.\newline
+    L'échange est le but principal de ces séances, n'hésitez en aucun cas à \textbf{poser vos questions meme si vous pensez quelles sont stupides !} 
+    \newline
+  Les Pingouins sont là pour vous aider ! :) \newline
+  \newline \newline
+  \begin{itemize}
+      \item
+Mise en contexte
+\end{itemize}
+Vous êtes le dirigeant de la plus grosse entreprise de sabre laser, on trouve vos armes jusqu'au confin de la galaxie.
+Votre notoriété est telle que même Dark Vador en personne vient se fournir chez vous.
+Il est donc inconcevable que ne répondiez pas à une de ses demandes.
+\newline \newline
+\begin{itemize}
+    \item
+Introduction
+\end{itemize}
+Hier, Dark Vador, furieux, est venu vous voir car il s'est rendu compte que le sabre laser de Dark Maul est plus puissant que le sien.
+Pour l'instant, seul la puissance permet de différencier les sabres laser.
+Ansi, celui de Dark Vador possède une puissance de 35 et celui de Dark Maul une puissance de 40. Dark Vador veut donc inverser les deux sabres laser.
+}
+
+\newpage
+\thispagestyle{empty}
+
+\tableofcontents
+
+\clearpage
+\thispagestyle{empty}
+\newpage
+
+%\chapter{String}
+\chapter{swap\_light\_saber}
+
+%\turnindir{piscine\_soutien}
+%\daypiscine{1}
+%\extitle{my\_strcpy}
+%\exnumber{1}
+%\exscore{n/a}
+%\exflags{-W -Wall -Werror}
+%\excompil{gcc}
+%\exmake{Non}
+%\exrules{n/a}
+%\exfiles{my\_strcpy.c, my\_strcpy.h}
+%\exnotes{n/a}
+%\exforbidden{Toute}
+%\makeheader
+
+\begin{itemize}
+  \item
+Dark Vador et Dark Maul vont vous envoyer leur sabre laser pour faire les modifications, vous devrez donc réaliser une fonction qui va échanger les deux armes et les renvoyer aux proprietaires. Pour vous aider, votre adjoint vous a préparé le prototype:
+\lstset{language=C,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#}
+}
+\begin{lstlisting}
+  void swap_liht_saber(int *sabre_laser_1, int *sabre_laser_2);
+\end{lstlisting}
+\end{itemize}
+\hint{Un Pingouin est derrière vous pour vous aider}
+\newpage
+
+\chapter{average\_light\_saber}
+
+%\turnindir{piscine\_soutien}
+%\daypiscine{1}
+%\extitle{my\_strncpy}
+%\exnumber{2}
+%\exscore{n/a}
+%\exflags{-W -Wall -Werror}
+%\excompil{gcc}
+%\exmake{Non}
+%\exrules{n/a}
+%\exfiles{my\_strncpy.c, my\_strncpy.h}
+%\exnotes{n/a}
+%\exforbidden{Toute}
+%\makeheader
+
+\begin{itemize}
+  \item
+Le côté obscur de la force voudrait obtenir une moyenne de la force de ses sabres laser. Dark vador vous envoie donc les sabres laser de ses sbires pour que vous puissiez calculer la
+moyenne, Votre super adjoint vous propose comme prototype:
+\lstset{language=C,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#}
+}
+\begin{lstlisting}
+  int average_light_saber(int *light_saber_list, size_t list_size);
+\end{lstlisting}
+\end{itemize}
+\hint{Imitez le bruit d'un sabre laser pour qu'un Pingouin vienne vous aider}
+
+\newpage
+\chapter{engrave\_light\_saber}
+
+%\turnindir{piscine\_soutien}
+%\daypiscine{1}
+%\extitle{my\_strdup}
+%\exnumber{3}
+%\exscore{n/a}
+%\exflags{-W -Wall -Werror}
+%\excompil{gcc}
+%\exmake{Non}
+%\exrules{n/a}
+%\exfiles{my\_strdup.c, my\_strdup.h}
+%\exnotes{n/a}
+%\exforbidden{Toute, sauf malloc et free}
+%\makeheader
+
+\begin{itemize}
+  \item
+Ce matin, vous recevez une lettre de maitre Yoda :
+"mon sabre laser tu graveras, quand les pointeurs tu maitriseras !"
+Heuresement, grace à www.yodaspeak.co.uk votre adjoint a réussi a traduire cette lettre :
+"il aimerait avoir le nom de son bien aimée, Amandine, gravé sur son sabre laser."
+Vous allez mettre en oeuvre une fonction qui effectuera la gravure c'est à dire copier la chaîne de caractère de maître Yoda sur le sabre laser.
+Une fois de plus votre adjoint vous fournit le prototype:
+\lstset{language=C,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#}
+}
+\begin{lstlisting}
+    char *engrave_light_saber(char *model, char *engraving); 
+\end{lstlisting}
+\end{itemize}
+\hint{man strcpy...}
+
+\newpage
+\chapter{automating\_light\_saber}
+
+%\turnindir{piscine\_soutien}
+%\daypiscine{1}
+%\extitle{my\_itoa}
+%\exnumber{4}
+%\exscore{n/a}
+%\exflags{-W -Wall -Werror}
+%\excompil{gcc}
+%\exmake{Non}
+%\exrules{n/a}
+%\exfiles{my\_itoa.c, my\_itoa.h}
+%\exnotes{n/a}
+%\exforbidden{Toute}
+%\makeheader
+
+\begin{itemize}
+  \item
+Ayant appris la possibilité de graver son sabre Laser, Dark Vador, Jaloux de celui de maître Yoda vous en commande une quantité astronomique.
+Vous allez realiser une fonction qui va automatiser tout le travail, elle va dynamiquement graver la chaîne de caractère, c'est à dire allouer assez d'espace en mémoire pour copier ce que vous lui passez en paramètre, et renvoyer cette chaine de caractère. Comme d'habitude votre super adjoint vous aide
+et vous donne comme prototype : 
+\lstset{language=C,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#}
+}
+\begin{lstlisting}
+ char *automating_light_saber(char *engraving);
+\end{lstlisting}
+\end{itemize}
+\hint{man strdup...}
+\newpage
+
+\chapter{feature\_light\_saber\_cpy}
+
+%\turnindir{piscine\_soutien}
+%\daypiscine{1}
+%\extitle{my\_atoi}
+%\exnumber{5}
+%\exscore{n/a}
+%\exflags{-W -Wall -Werror}
+%\excompil{gcc}
+%\exmake{Non}
+%\exrules{n/a}
+%\exfiles{my\_atoi.c, my\_atoi.h}
+%\exnotes{n/a}
+%\exforbidden{Toute}
+%\makeheader
+\begin{itemize}
+  \item
+On arrête pas l'évolution, et maintenant vos sabres, en plus d'avoir une puissance et une gravure, ont maintenant une nouvelle caractéristique : la vitesse d'attaque;
+cette dernière sera caractérisée par un float.
+Votre adjoint vous conseille de realiser une fonction générique qui vous permettra de copier la vitesse d'attaque ou la puissance du sabre laser dans un autre.
+le prototype sera 
+\lstset{language=C,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#}
+}
+\begin{lstlisting}
+  void *feature_light_saber_cpy(void *dest, void *src);
+\end{lstlisting}
+\end{itemize}
+\hint{Imitez choubaca pour attirer l'attention d'un Pingouins}
+\newpage
+
+\chapter{t\_light\_saber}
+
+%\turnindir{piscine\_soutien}
+%\daypiscine{1}
+%\extitle{my\_douangj}
+%\exnumber{6}
+%\exscore{n/a}
+%\exflags{-W -Wall -Werror}
+%\excompil{gcc}
+%\exmake{Non}
+%\exrules{n/a}
+%\exfiles{my\_douangj.c, my\_douangj.h}
+%\exnotes{n/a}
+%\exforbidden{Toute, sauf malloc et free}
+%\makeheader
+
+\begin{itemize}
+  \item
+Pour aller plus loin vous allez creer votre propre type : light\_saber;
+Il contiendra la puissance du sabre laser, sa vitesse d'attaque et de quoi attribuer un nom a ce saber laser.
+\lstset{language=C,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#}
+}
+\begin{lstlisting}
+  light_saber laser;
+\end{lstlisting}
+\end{itemize}
+\lstset{language=C,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#}
+}
+\begin{lstlisting}
+  t_light_saber sabre;
+
+  sabre.power = 50;
+  sabre.attack_speed = 25.5f;
+\end{lstlisting}
+\lstset{language=C,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#}
+}
+
+\begin{itemize}
+    \item
+        
+        Lorsque vous avez fini la totalité des exos vous pouvez taper : telnet towel.blinkenlights.nl dans un terminal et \textbf{Enjaillez vous} :)
+\end{itemize}
+\thispagestyle{fancy}
+\end{document}
