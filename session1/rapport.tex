@@ -20,10 +20,18 @@
 \newcommand*{\glossaryname}{Dictionary}
 \usepackage[numberedsection]{glossaries}
 \newcommand{\dictentry}[2]{%
-  \newglossaryentry{#1}{name=#1,description={#2}}%
-  \glslink{#1}{#1*}%
+	\newglossaryentry{#1}{name=#1,description={#2}}%
+	\glslink{#1}{#1*}%
 }
 \makeglossaries
+
+\lstset{language=C,
+	basicstyle=\ttfamily,
+	keywordstyle=\color{blue}\ttfamily,
+	stringstyle=\color{red}\ttfamily,
+	commentstyle=\color{green}\ttfamily,
+	morecomment=[l][\color{magenta}]{\#}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -34,29 +42,29 @@
 
 \maketitle
 
-\summary{test}
+\summary{Résumé}
 {
-    Bienvenue dans cette première séance. \newline
-    Nous tenterons d'éclaircir ensemble certaines notions qui sont encore sombres pour vous.\newline
-    L'échange est le but principal de ces séances, n'hésitez en aucun cas à \textbf{poser vos questions meme si vous pensez qu'elles sont stupides !} 
-    \newline
-  Les Pingouins sont là pour vous aider ! :) \newline
-  \newline \newline
-  \begin{itemize}
-      \item
-Mise en contexte
-\end{itemize}
-Vous êtes le dirigeant de la plus grosse entreprise de sabre laser, on trouve vos armes jusqu'au confin de la galaxie.
-Votre notoriété est telle que même Dark Vador en personne vient se fournir chez vous.
-Il est donc inconcevable que ne répondiez pas à une de ses demandes.
-\newline \newline
-\begin{itemize}
-    \item
-Introduction
-\end{itemize}
-Hier, Dark Vador, furieux, est venu vous voir car il s'est rendu compte que le sabre laser de Dark Maul est plus puissant que le sien.
-Pour l'instant, seul la puissance permet de différencier les sabres laser.
-Ansi, celui de Dark Vador possède une puissance de 35 et celui de Dark Maul une puissance de 40. Dark Vador veut donc inverser les deux sabres laser.
+	Bienvenue dans cette première séance~!\\\\
+	Nous tenterons d'éclaircir ensemble certaines notions qui sont encore sombres pour vous.\\
+	L'échange est le but principal de ces séances, n'hésitez en aucun cas à \textbf{poser vos questions meme si vous pensez qu'elles sont stupides~!}
+	\\
+	Les Pingouins sont là pour vous aider~! \texttt{:)} \\
+	\\ \\
+	\begin{itemize}
+		\item	Mise en contexte
+	\end{itemize}
+
+	Vous êtes le dirigeant de la plus grosse entreprise de sabre laser, on trouve vos armes jusqu'au confin de la galaxie.\\
+	Votre notoriété est telle que même Dark Vador en personne vient se fournir chez vous.\\
+	Il est donc inconcevable que ne répondiez pas à une de ses demandes.\\
+	\\ \\
+	\begin{itemize}
+		\item	Introduction
+	\end{itemize}
+
+	Hier, Dark Vador, furieux, est venu vous voir car il s'est rendu compte que le sabre laser de Dark Maul est plus puissant que le sien.\\
+	Pour l'instant, seul la puissance permet de différencier les sabres laser.\\
+	Ansi, celui de Dark Vador possède une puissance de 35 et celui de Dark Maul une puissance de 40. Dark Vador veut donc inverser les deux sabres laser.\\
 }
 
 \newpage
@@ -86,20 +94,16 @@ Ansi, celui de Dark Vador possède une puissance de 35 et celui de Dark Maul une
 %\makeheader
 
 \begin{itemize}
-  \item
-Dark Vador et Dark Maul vont vous envoyer leur sabre laser pour faire les modifications, vous devrez donc réaliser une fonction qui va échanger les deux armes et les renvoyer aux proprietaires. Pour vous aider, votre adjoint vous a préparé le prototype:
-\lstset{language=C,
-                basicstyle=\ttfamily,
-                keywordstyle=\color{blue}\ttfamily,
-                stringstyle=\color{red}\ttfamily,
-                commentstyle=\color{green}\ttfamily,
-                morecomment=[l][\color{magenta}]{\#}
-}
-\begin{lstlisting}
-  void swap_light_saber(int *sabre_laser_1, int *sabre_laser_2);
-\end{lstlisting}
+	\item	Dark Vador et Dark Maul vont vous envoyer leur sabre laser pour faire les modifications, vous devrez donc réaliser une fonction qui va échanger les deux armes et les renvoyer aux proprietaires.\\\\
+		Pour vous aider, votre adjoint vous a préparé le prototype~:
 \end{itemize}
+
+\begin{lstlisting}
+	void swap_light_saber(int *sabre_laser_1, int *sabre_laser_2);
+\end{lstlisting}
+
 \hint{Un Pingouin est derrière vous pour vous aider}
+
 \newpage
 
 \chapter{average\_light\_saber}
@@ -119,20 +123,14 @@ Dark Vador et Dark Maul vont vous envoyer leur sabre laser pour faire les modifi
 %\makeheader
 
 \begin{itemize}
-  \item
-Le côté obscur de la force voudrait obtenir une moyenne de la force de ses sabres laser. Dark vador vous envoie donc les sabres laser de ses sbires pour que vous puissiez calculer la
-moyenne, Votre super adjoint vous propose comme prototype:
-\lstset{language=C,
-                basicstyle=\ttfamily,
-                keywordstyle=\color{blue}\ttfamily,
-                stringstyle=\color{red}\ttfamily,
-                commentstyle=\color{green}\ttfamily,
-                morecomment=[l][\color{magenta}]{\#}
-}
-\begin{lstlisting}
-  int average_light_saber(int *light_saber_list, size_t list_size);
-\end{lstlisting}
+	\item	Le côté obscur de la force voudrait obtenir une moyenne de la force de ses sabres laser.\\
+		Dark vador vous envoie donc les sabres laser de ses sbires pour que vous puissiez calculer cette moyenne.\\\\
+		Votre super adjoint vous propose comme prototype~:
 \end{itemize}
+
+\begin{lstlisting}
+	int average_light_saber(int *light_saber_list, size_t list_size);
+\end{lstlisting}
 \hint{Imitez le bruit d'un sabre laser pour qu'un Pingouin vienne vous aider}
 
 \newpage
@@ -153,95 +151,49 @@ moyenne, Votre super adjoint vous propose comme prototype:
 %\makeheader
 
 \begin{itemize}
-  \item
-Ce matin, vous recevez une lettre de maitre Yoda :
-"mon sabre laser tu graveras, quand les pointeurs tu maitriseras !"
-Heuresement, grace à www.yodaspeak.co.uk votre adjoint a réussi a traduire cette lettre :
-"il aimerait avoir le nom de son bien aimée, Amandine, gravé sur son sabre laser."
-Vous allez mettre en oeuvre une fonction qui effectuera la gravure c'est à dire copier la chaîne de caractère de maître Yoda sur le sabre laser.
-Une fois de plus votre adjoint vous fournit le prototype:
-\lstset{language=C,
-                basicstyle=\ttfamily,
-                keywordstyle=\color{blue}\ttfamily,
-                stringstyle=\color{red}\ttfamily,
-                commentstyle=\color{green}\ttfamily,
-                morecomment=[l][\color{magenta}]{\#}
-}
-\begin{lstlisting}
-    char *engrave_light_saber(char *model, char *engraving); 
-\end{lstlisting}
+	\item	Ce matin, vous recevez une lettre de maitre Yoda~:\\
+			\textit{``~Mon sabre laser tu graveras, quand les pointeurs tu maitriseras~!~''}\\
+		Heuresement, grace à \texttt{www.yodaspeak.co.uk} votre adjoint a réussi a traduire cette lettre~: il aimerait en effet avoir le nom de sa bien aimée, Amandine, gravé sur son sabre laser.\\
+		Vous allez mettre en oeuvre une fonction qui effectuera la gravure, une fonction qui copiera la chaîne de caractère de maître Yoda sur le sabre laser.\\\\
+		Une fois de plus votre adjoint vous fournit le prototype~:
 \end{itemize}
-\hint{man strcpy...}
+
+\begin{lstlisting}
+	char *engrave_light_saber(char *model, char *engraving); 
+\end{lstlisting}
+
+\hint{\lstinline$man strcpy$}
 
 \newpage
 \chapter{automating\_light\_saber}
 
-%\turnindir{piscine\_soutien}
-%\daypiscine{1}
-%\extitle{my\_itoa}
-%\exnumber{4}
-%\exscore{n/a}
-%\exflags{-W -Wall -Werror}
-%\excompil{gcc}
-%\exmake{Non}
-%\exrules{n/a}
-%\exfiles{my\_itoa.c, my\_itoa.h}
-%\exnotes{n/a}
-%\exforbidden{Toute}
-%\makeheader
-
 \begin{itemize}
-  \item
-Ayant appris la possibilité de graver son sabre Laser, Dark Vador, Jaloux de celui de maître Yoda vous en commande une quantité astronomique.
-Vous allez réaliser une fonction qui va automatiser tout le travail, elle va dynamiquement graver la chaîne de caractère, c'est à dire allouer assez d'espace en mémoire pour copier ce que vous lui passez en paramètre, et renvoyer cette chaine de caractère. Comme d'habitude votre super adjoint vous aide
-et vous donne comme prototype : 
-\lstset{language=C,
-                basicstyle=\ttfamily,
-                keywordstyle=\color{blue}\ttfamily,
-                stringstyle=\color{red}\ttfamily,
-                commentstyle=\color{green}\ttfamily,
-                morecomment=[l][\color{magenta}]{\#}
-}
-\begin{lstlisting}
- char *automating_light_saber(char *engraving);
-\end{lstlisting}
+	\item	Ayant découvert la possibilité de graver son sabre laser, Dark Vador, jaloux de maître Yoda, vous en commande une quantité astronomique. \\
+		Réalisez une fonction qui automatise le travail~: elle alouera dynamiquement la chaîne de caractère, c'est à dire qu'elle allouera suffisamment d'espace en mémoire pour copier ce que vous lui passez en paramètre, et renvoyer la chaine.\\\\
+		Comme d'habitude votre super adjoint vous aide en vous donnant ce prototype~: 
 \end{itemize}
-\hint{man strdup...}
+
+\begin{lstlisting}
+	char *automating_light_saber(char *engraving);
+\end{lstlisting}
+\hint{\lstinline$man strdup$}
 \newpage
 
 \chapter{feature\_light\_saber\_cpy}
 
-%\turnindir{piscine\_soutien}
-%\daypiscine{1}
-%\extitle{my\_atoi}
-%\exnumber{5}
-%\exscore{n/a}
-%\exflags{-W -Wall -Werror}
-%\excompil{gcc}
-%\exmake{Non}
-%\exrules{n/a}
-%\exfiles{my\_atoi.c, my\_atoi.h}
-%\exnotes{n/a}
-%\exforbidden{Toute}
-%\makeheader
 \begin{itemize}
-  \item
-On arrête pas l'évolution, et maintenant vos sabres, en plus d'avoir une puissance et une gravure, ont maintenant une nouvelle caractéristique : la vitesse d'attaque;
-cette dernière sera caractérisée par un float.
-Votre adjoint vous conseille de réaliser une fonction générique qui vous permettra de copier la vitesse d'attaque ou la puissance du sabre laser dans un autre.
-le prototype sera 
-\lstset{language=C,
-                basicstyle=\ttfamily,
-                keywordstyle=\color{blue}\ttfamily,
-                stringstyle=\color{red}\ttfamily,
-                commentstyle=\color{green}\ttfamily,
-                morecomment=[l][\color{magenta}]{\#}
-}
-\begin{lstlisting}
-  void *feature_light_saber_cpy(void *dest, void *src);
-\end{lstlisting}
+	\item	On n'arrête pas l'évolution. Désormais, vos sabres ont non seulement une puissance et une gravure, mais aussi une nouvelle caractéristique~: la vitesse d'attaque~;
+		cette dernière caractérisée par un float.\\
+		Votre adjoint vous conseille de réaliser une fonction générique qui vous permettra de copier la vitesse d'attaque ou la puissance du sabre laser dans un autre.\\\\
+		Le prototype sera le suivant~:
 \end{itemize}
-\hint{Imitez choubaca pour attirer l'attention d'un Pingouins}
+
+\begin{lstlisting}
+	void *feature_light_saber_cpy(void *dest, void *src);
+\end{lstlisting}
+
+\hint{Imitez chewbacca pour attirer l'attention d'un pingouin}
+
 \newpage
 
 \chapter{t\_light\_saber}
@@ -261,45 +213,25 @@ le prototype sera
 %\makeheader
 
 \begin{itemize}
-  \item
-Pour aller plus loin vous allez créer votre propre type : light\_saber;
-Il contiendra la puissance du sabre laser, sa vitesse d'attaque et de quoi attribuer un nom a ce saber laser.
-\lstset{language=C,
-                basicstyle=\ttfamily,
-                keywordstyle=\color{blue}\ttfamily,
-                stringstyle=\color{red}\ttfamily,
-                commentstyle=\color{green}\ttfamily,
-                morecomment=[l][\color{magenta}]{\#}
-}
-\begin{lstlisting}
-  light_saber laser;
-\end{lstlisting}
+	\item	Pour aller plus loin vous allez créer votre propre type~: light\_saber~:
+		il contiendra \textbf{la puissance} du sabre laser, sa \textbf{vitesse d'attaque} et de quoi attribuer \textbf{un nom} a ce saber laser.
 \end{itemize}
-\lstset{language=C,
-                basicstyle=\ttfamily,
-                keywordstyle=\color{blue}\ttfamily,
-                stringstyle=\color{red}\ttfamily,
-                commentstyle=\color{green}\ttfamily,
-                morecomment=[l][\color{magenta}]{\#}
-}
-\begin{lstlisting}
-  t_light_saber sabre;
 
-  sabre.power = 50;
-  sabre.attack_speed = 25.5f;
+\begin{lstlisting}
+	light_saber laser;
 \end{lstlisting}
-\lstset{language=C,
-                basicstyle=\ttfamily,
-                keywordstyle=\color{blue}\ttfamily,
-                stringstyle=\color{red}\ttfamily,
-                commentstyle=\color{green}\ttfamily,
-                morecomment=[l][\color{magenta}]{\#}
-}
+
+\begin{lstlisting}
+	t_light_saber sabre;
+
+	sabre.power = 50;
+	sabre.attack_speed = 25.5f;
+\end{lstlisting}
 
 \begin{itemize}
-    \item
-        
-        Lorsque vous avez fini la totalité des exercices vous pouvez taper : telnet towel.blinkenlights.nl dans un terminal et \textbf{Enjaillez vous} :)
+		\item	Lorsque vous avez fini la totalité des exercices, tapez, dans un terminal~:\\
+			\lstinline$telnet towel.blinkenlights.nl$\\\\
+			\textbf{Enjoy!} \texttt{:)}
 \end{itemize}
 \thispagestyle{fancy}
 \end{document}
