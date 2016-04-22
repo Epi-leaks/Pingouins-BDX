@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.4.22)  22 APR 2016 12:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.4.22)  22 APR 2016 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,10 +6,10 @@ entering extended mode
 (./rapport.tex
 LaTeX2e <2015/10/01> patch level 2
 Babel <3.9m> and hyphenation patterns for 79 languages loaded.
-(/home/lokoum/Downloads/EpiLayout/session1/class/koala-en.cls
+(./class/koala-en.cls
 Document Class: koala-en 2010/07/15 v2.0 LaTeX class for Koala-themed documents
  - English language
-(/home/lokoum/Downloads/EpiLayout/session1/class/koala.cls
+(./class/koala.cls
 Document Class: koala 2010/07/15 v2.0 LaTeX class for Koala-themed documents
 (/usr/share/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
@@ -576,9 +576,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box30
 \@float@everytoks=\toks27
 \@floatcapt=\box31
-)
-(/home/lokoum/Downloads/EpiLayout/session1/class/atbeginend.sty)
-(/home/lokoum/Downloads/EpiLayout/session1/class/tocloft.sty
+) (./class/atbeginend.sty)
+(./class/tocloft.sty
 Package: tocloft 2009/09/04 v2.3d parameterised ToC, etc., typesetting
 
 
@@ -620,12 +619,11 @@ Package tocloft Note: The document has chapter divisions.
 \cftbeforetabskip=\skip87
 \cfttabindent=\skip88
 \cfttabnumwidth=\skip89
-) (/home/lokoum/Downloads/EpiLayout/session1/class/multirow.sty
+) (./class/multirow.sty
 \bigstrutjot=\dimen129
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 132.
-))
-(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+)) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2015/08/03 3.9m The Babel package
 
 (/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
@@ -1113,9 +1111,8 @@ Package pdftex.def Info: back.png used on input line 35.
 
 \openout4 = `rapport.ist'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/lokoum/Downloads/Epi
-Layout/session1/class/back.png> </home/lokoum/Downloads/EpiLayout/session1/clas
-s/logo_epitech_eip.jpg>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./class/back.png> <./class
+/logo_epitech_eip.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--45
 
  []
@@ -1199,7 +1196,7 @@ Package pdftex.def Info: back.png used on input line 103.
  [3
 
 
- </home/lokoum/Downloads/EpiLayout/session1/class/helphint.pdf>]
+ <./class/helphint.pdf>]
 Chapter 2.
 File: helphint.pdf Graphic file (type pdf)
 <use helphint.pdf>
@@ -1356,7 +1353,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
  ) 
 Here is how much of TeX's memory you used:
  15758 strings out of 493054
- 227345 string characters out of 6140586
+ 226893 string characters out of 6140586
  429160 words of memory out of 5000000
  18911 multiletter control sequences out of 15000+600000
  34702 words of font info for 35 fonts, out of 8000000 for 9000
@@ -1369,7 +1366,7 @@ f-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/lm/lmtt8.pfb>
-Output written on rapport.pdf (9 pages, 542934 bytes).
+Output written on rapport.pdf (9 pages, 542885 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams
