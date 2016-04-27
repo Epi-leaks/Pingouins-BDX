@@ -14,6 +14,15 @@ So I'm leaking this in the whole world, publicly. :D
 So, get those files, train yourself in C ; enjoy!\
 I'm happy I could help you! <3
 
+## Quick note:
+
+I put this content is under CC0, no rights reserved.\
+Illegally, of course, but that can protect you if you want to modifiate it (I'm completely open to pull requests).
+
+
+Sincerly yours,\
+Aeredris
+
 ######
 
 ---------------
@@ -32,3 +41,12 @@ Au final, je fais fuiter tout le repository, au monde entier, publiquement. :D
 
 Du coup, chopez ces fichiers ; __enjoy__ !\
 Ravie d'avoir pu vous aider ! <3
+
+## Petite note :
+
+Je balance ce répository sous CC0, aucun droit réservé.\
+Bon, c'est pas légal, bien entendu, mais logiquement ça vous protège si vous voulez y apporter vos modifications (go faire des pull requests).
+
+
+Sincèrement votre,\
+Aeredris
